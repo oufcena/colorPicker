@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Color Picker</h2>
+
+<input type="color" value="#ff0000" oninput="colorize(this)">
+
+<script>
+function colorize(x) {
+  document.body.style.cssText += `
+    background: ${x.value}
+  `;
+}
+</script>
+</body>
+</html>
